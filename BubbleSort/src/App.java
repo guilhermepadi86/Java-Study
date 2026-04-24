@@ -7,7 +7,7 @@ public class App {
         ArrayList<Integer> randomNumbers = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
-            randomNumbers.add(rand.nextInt(10));
+            randomNumbers.add(rand.nextInt(250));
         }
 
         bubbleSort(randomNumbers);
@@ -15,7 +15,7 @@ public class App {
         System.out.println(randomNumbers);
     }
 
-    static ArrayList bubbleSort(ArrayList<Integer> lista) {
+    static ArrayList<Integer> bubbleSort(ArrayList<Integer> lista) {
         for (int i = 0; i < lista.size(); i++) {
             if ((i + 1 < lista.size()) && (lista.get(i) > lista.get(i + 1))) {
                 int aux = lista.get(i + 1);
